@@ -1,0 +1,112 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0057ff; /* Cor de fundo azul vibrante */
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os elementos */
+}
+
+/* 1. Logo */
+.logo-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+/* 2. Título e Descrição */
+h1 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* 3. Ícones de Redes Sociais */
+.social-icons {
+    display: flex;
+    gap: 25px; /* Espaço entre os ícones */
+}
+
+.social-icons a img {
+    width: 30px; /* Tamanho dos ícones */
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+/* 4. Card de Destaque */
+.highlight-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.highlight-card img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.card-footer {
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* 5. Links Principais */
+.links-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-button {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column; /* Para o subtítulo ficar abaixo */
+    align-items: center;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.link-button:hover {
+    transform: scale(1.03); /* Efeito de crescimento ao passar o mouse */
+}
+
+.link-button small {
+    font-weight: normal;
+    font-size: 0.8em;
+    margin-top: 5px;
+    color: #555;
+}
