@@ -30,6 +30,12 @@
              
         </div>
         
+        <div class="tabs" role="tablist">
+            <button class="tab ativa" data-aba="grupos" role="tab">📲 Grupos</button>
+            <button class="tab" data-aba="promos" role="tab">🔥 Últimas promos</button>
+        </div>
+
+        <section id="aba-grupos" class="aba">
         <div class="highlight-card">
             <img src="promo-banner.png" alt="Banner de Promoção">
             <div class="card-footer">
@@ -50,8 +56,21 @@
 </a>
 
         </div>
+        </section>
+
+        <section id="aba-promos" class="aba" hidden>
+            <div id="lista-promos" class="lista-promos">
+                <p class="vazio">Carregando promoções...</p>
+            </div>
+            <a class="link-button" href="https://t.me/promo24h7" target="_blank">
+                <strong>Ver todas no Telegram</strong>
+                <small>As promos saem primeiro lá ⚡</small>
+            </a>
+        </section>
 
     </main>
+
+    <script src="promos-page.js"></script>
     
 </body>
 </html>
